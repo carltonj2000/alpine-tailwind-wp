@@ -12,9 +12,9 @@ module.exports = {
         test: /\.js$/i,
         include: path.resolve(__dirname, "src"),
         use: {
-          loader: "babel-loader",
+          loader: "esbuild-loader",
           options: {
-            presets: ["@babel/preset-env"],
+            target: "es2015",
           },
         },
       },
